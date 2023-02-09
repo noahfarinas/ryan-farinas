@@ -1,38 +1,248 @@
+body {
+  background-color: #000;
+
+}
+
 .App {
+  background-color: #000;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/*<=== navigation CSS start ===> */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  height: 100vh;
+
+
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: white;
+  height: 100%;
+  margin: 0;
+  width: 150px;
+
+
+}
+
+.item-container h1 {
   text-align: center;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-container ul,
+li,
+a {
+  list-style-type: none;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Druk Wide', Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-container ul,
+li:hover {
+  color: #c87f3a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ion-icon {
+  font-size: 24px;
+  text-align: left;
+
+}
+
+/*<=== navigation CSS end ===> */
+
+
+
+
+/*<=== Content CSS start ===> */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  overflow: scroll;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.nav {
+  width: 25%;
+  justify-content: flex-end;
+  text-align: right;
+  direction: rtl;
+}
+
+.mains {
+  width: 80%;
+}
+
+
+
+/*<=== Content CSS end ===> */
+
+
+/*<=== Films CSS start ===> */
+
+.films-container {
+
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.film-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.film-content img {
+  width: 363px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* .film-content h2,ul, ui {
+  margin: 5px;
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Druk Wide',Arial,sans-serif;
+} */
+
+/*<=== Films CSS end ===> */
+
+
+
+/*<=== Info CSS start ===> */
+
+.info-container {
+  color: #fff;
+  display: inline-block;
+  align-items: center;
+  height: 100vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.column-one {
+  width: 300px;
+  float: right;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.column-two {
+  width: 350px;
+  height: auto;
+  float: left;
+  top: 2000px;
+  }
+
+.column-one,
+.column-two {
+  margin: 10px;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo-one, .photo-two {
+  width: 50%;
+  margin-bottom: 20px;
 }
+
+.info-container img {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed;
+  top: 50%;
+  left: 68%;
+  transform: translate(-60%, -100%); */
+}
+
+
+/*<=== Info CSS end ===> */
+
+
+
+
+/* .info-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
+  height: auto;
+  margin-bottom: 100px;
+} */
+
+
+/*<=== Info STILLS start ===> */
+
+.stills-container {
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+ .photo-layout {
+  margin: 100px;
+ }
+
+ .photo-layout img {
+ width: auto;
+ height: 250px;
+ margin: 5px;
+ }
+
+
+
+/*<=== Info STILLS end ===> */
